@@ -15,10 +15,22 @@
     <?php
         $num=$_GET['num'];
         
-        if($num>=10000){
+        if($num>=10000 && $num< 20000){
             $newNum=$num*1.10;
             echo $newNum;
-        }  
+        }
+        elseif($num>=20000 && $num< 30000){
+            $newNum=$num*1.08;
+            echo $newNum;
+        }
+        elseif($num>=30000 && $num< 40000){
+            $newNum=$num*1.05;
+            echo $newNum;
+        }
+        elseif($num>=40000 && $num< 50000){
+            $newNum=$num*1.02;
+            echo $newNum;
+        }
         else {
             echo $num;
         }
