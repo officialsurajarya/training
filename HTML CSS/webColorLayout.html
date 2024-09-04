@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Color Layout</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .main{
+            height: 540px;
+            width: 1000px;
+            background-color: skyblue;
+        }
+        .row1{
+            font-size: 50px;
+            text-align: center;
+            height: 100px;
+            width: 1000px;
+            background-color: lightcoral;
+        }
+        .row2{
+            height: 40px;
+            width: 1000px;
+            background-color: lightgreen;
+            display: flex;
+        }
+        .navbar{
+            text-align: center;
+            width: 200px;
+            padding: 10px;
+            font-size: 20px;
+        }
+        .row3{
+            height: 200px;
+            width: 1000px;
+            background-color:blueviolet ;
+            display: flex;
+        }
+        .title{
+            height: 40px;
+            width: 250px;
+            text-align: center;
+        }
+        .row3img{
+            font-size: 50px;
+            height: 200px;
+            width: 750px;
+            background-color: #9aff6e;
+            text-align: center;
+        }
+        .row4{
+            height: 150px;
+            width: 1000px;
+            background-color: #ff30c4;
+            font-size: 50px;
+            text-align: center;
+        }
+        .row5{
+            height: 100px;
+            width: 1000px;
+            background-color:yellow;
+            display: flex;
+            text-align: center;
+        }
+        .img3{
+            height: 100px;
+            width: 333.33333px;
+            font-size: 50px;
+        }
+        .footer{
+            text-align: center;
+            font-size: 25px;
+            background-color: yellow;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <Header>
+            <div class="row1">
+                <div style="padding: 20px;">This Is My First Web Color Layout Design</div>
+            </div>
+            <nav class="row2">
+                <div class="navbar" style="background-color: rgb(117, 191, 255);">Home</div>
+                <div class="navbar" style="background-color: antiquewhite;">About</div>
+                <div class="navbar" style="background-color: aqua;">Course</div>
+                <div class="navbar" style="background-color: aquamarine;">Gallery</div>
+                <div class="navbar" style="background-color: bisque;">Contacu Us</div>
+            </nav>
+        </Header>
+        <main class="row3">
+            <div>
+                <div class="title" style="background-color: aliceblue;">Home</div>
+                <div class="title" style="background-color: antiquewhite;">About</div>
+                <div class="title" style="background-color: aqua;">Course</div>
+                <div class="title" style="background-color: aquamarine;">Gallery</div>
+                <div class="title" style="background-color: bisque;">Contacu Us</div>
+            </div>
+            <div class="row3img">
+                <div style="margin-top: 75px;">Image Here</div>
+            </div>
+        </main>
+        <article class="row4">
+            <div style="padding-top: 48px;">Our Clients</div>
+        </article>
+        <aside class="row5">
+            <div class="img3"  style="background-color: rgb(113, 246, 80);"><div style="margin-top: 17.5px;">Image Here</div></div>
+            <div class="img3"  style="background-color: rgb(155, 106, 234);"><div style="margin-top: 17.5px;">Image Here</div></div>
+            <div class="img3"  style="background-color: bisque;"><div style="margin-top: 17.5px;">Image Here</div></div>
+        </aside>
+        <footer class="footer">
+            <a href="#">Home |</a>
+            <a href="#">About |</a>
+            <a href="#">Course |</a>
+            <a href="#">Gallery |</a>
+            <a href="#">Contact Us</a>
+        </footer>
+    </div>
+</body>
+</html>
