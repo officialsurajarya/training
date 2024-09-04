@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo</title>
+    <style>
+        #outer{
+            border: 2px solid black;
+            height: 750px;
+            width: 750px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .box1{
+            height: 300px;
+            width: 750px;
+        }
+        .box2{
+            height: 150px;
+            width: 750px;
+        }
+        .red{
+            background-color: red;
+            height: 300px;
+            width: 300px;
+            float: left;
+        }
+        .green{
+            background-color: green;
+            height: 300px;
+            width: 300px;
+            float: right;
+        }
+        .blue{
+            background-color: blue;
+            height: 300px;
+            width: 300px;
+            float: left;
+        }
+        .yellow{
+            background-color: yellow;
+            height: 300px;
+            width: 300px;
+            float: right;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: white;
+            transform: rotate(45deg);
+            margin: 42px auto;
+            border-radius: 20px;
+            padding: 5px;
+        }
+        .rb{
+            height: 60px;
+            width: 60px;
+            background-color: red;
+            border-radius: 30px;
+            float: left;
+            margin: 20px;
+        }
+        .gb{
+            height: 60px;
+            width: 60px;
+            background-color: green;
+            border-radius: 30px;
+            float: left;
+            margin: 20px;
+        }
+        .bb{
+            height: 60px;
+            width: 60px;
+            background-color: blue;
+            border-radius: 30px;
+            float: left;
+            margin: 20px;
+        }
+        .yb{
+            height: 60px;
+            width: 60px;
+            background-color: yellow;
+            border-radius: 30px;
+            float: left;
+            margin: 20px;
+        }
+        .mid_box{
+            height: 300px;
+            width: 150px;
+            float: left;
+        }
+        .row{
+            height: 300px;
+            width: 50px;
+            float: left;
+        }
+        .r1{
+            height: 48.4px;
+            width: 48.4px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        .box2a{
+            height: 150px;
+            width: 300px;
+            float: left;
+        }
+        .box2c{
+            height: 150px;
+            width: 300px;
+            float: right;
+        }
+        .column{
+            height: 50px;
+            width: 300px;
+            display: flex;
+        }
+        .c1{
+            height: 48.4px;
+            width: 48.4px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        .y{
+            background-color: yellow;
+        }
+        .r{
+            background-color: red;
+        }
+        .b{
+            background-color: blue;
+        }
+        .g{
+            background-color: green;
+        }
+        .circle{
+            border-radius: 25px;
+            background-image: url();
+        }
+        .box2b{
+            height: 150px;
+            width: 150px;
+            float: left;
+            background-color: black;
+        }
+        .color{
+            border: 75px solid;
+            border-color:green yellow blue red;
+        }
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div class="box1">
+            <div class="red">
+                <div class="box">
+                    <div class="rb"></div>
+                    <div class="rb"></div>
+                    <div class="rb"></div>
+                    <div class="rb"></div>
+                </div>
+            </div>
+            <div class="mid_box">
+                <div class="row">
+                    <div class="r1 "></div>
+                    <div class="r1"></div>
+                    <div class="r1 g circle"></div>
+                    <div class="r1"></div>
+                    <div class="r1"></div>
+                    <div class="r1"></div>
+                </div>
+                <div class="row">
+                    <div class="r1"></div>
+                    <div class="r1 g"></div>
+                    <div class="r1 g"></div>
+                    <div class="r1 g"></div>
+                    <div class="r1 g"></div>
+                    <div class="r1 g"></div>
+                </div>
+                <div class="row">
+                    <div class="r1"></div>
+                    <div class="r1 g"></div>
+                    <div class="r1"></div>
+                    <div class="r1"></div>
+                    <div class="r1"></div>
+                    <div class="r1"></div>
+                </div>
+            </div>
+            <div class="green">
+                <div class="box">
+                    <div class="gb"></div>
+                    <div class="gb"></div>
+                    <div class="gb"></div>
+                    <div class="gb"></div>
+                </div>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="box2a">
+                <div class="column">
+                    <div class="c1"></div>
+                    <div class="c1 r"></div>
+                    <div class="c1"></div>
+                    <div class="c1"></div>
+                    <div class="c1"></div>
+                    <div class="c1"></div>
+                </div>
+                <div class="column">
+                    <div class="c1"></div>
+                    <div class="c1 r"></div>
+                    <div class="c1 r"></div>
+                    <div class="c1 r"></div>
+                    <div class="c1 r"></div>
+                    <div class="c1 r"></div>
+                </div>
+                <div class="column">
+                    <div class="c1"></div>
+                    <div class="c1"></div>
+                    <div class="c1 r circle"></div>
+                    <div class="c1"></div>
+                    <div class="c1"></div>
+                    <div class="c1"></div>
+                </div>
+            </div>
+            <div class="box2b">
+                <div class="color">
+                    <div style="position: absolute;"></div>
+                </div>
+            </div>
+            <div class="box2c">
+                <div class="column">
+                    <div class="c1"></div>
+                    <div class="c1"></div>
+                    <div class="c1"></div>
+                    <div class="c1 y circle"></div>
+                    <div class="c1"></div>
+                    <div class="c1"></div>
+                </div>
+                <div class="column">
+                    <div class="c1 y"></div>
+                    <div class="c1 y"></div>
+                    <div class="c1 y"></div>
+                    <div class="c1 y"></div>
+                    <div class="c1 y"></div>
+                    <div class="c1"></div>
+                </div>
+                <div class="column">
+                    <div class="c1"></div>
+                    <div class="c1"></div>
+                    <div class="c1"></div>
+                    <div class="c1"></div>
+                    <div class="c1 y"></div>
+                    <div class="c1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="blue">
+                <div class="box">
+                    <div class="bb"></div>
+                    <div class="bb"></div>
+                    <div class="bb"></div>
+                    <div class="bb"></div>
+                </div>
+            </div>
+            <div class="mid_box">
+                <div class="row">
+                    <div class="r1"></div>
+                    <div class="r1"></div>
+                    <div class="r1"></div>
+                    <div class="r1"></div>
+                    <div class="r1 b"></div>
+                    <div class="r1"></div>
+                </div>
+                <div class="row">
+                    <div class="r1 b"></div>
+                    <div class="r1 b"></div>
+                    <div class="r1 b"></div>
+                    <div class="r1 b"></div>
+                    <div class="r1 b"></div>
+                    <div class="r1"></div>
+                </div>
+                <div class="row">
+                    <div class="r1"></div>
+                    <div class="r1"></div>
+                    <div class="r1"></div>
+                    <div class="r1 circle b"></div>
+                    <div class="r1"></div>
+                    <div class="r1"></div>
+                </div>
+            </div>
+            <div class="yellow">
+                <div class="box">
+                    <div class="yb"></div>
+                    <div class="yb"></div>
+                    <div class="yb"></div>
+                    <div class="yb"></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
