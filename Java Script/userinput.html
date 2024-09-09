@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <h1>User Input Example</h1>
+    <p>Enput Two Number</p>    
+    <input type="number" id="num1">
+    <input type="number" id="num2">
+    <button onclick="calculate()">Calculate</button>
+    <p id="ans">Result</p>
+    <script>
+        function calculate(){
+            var Number1 = parseInt(document.getElementById("num1").value);
+            var Number2 = parseInt(document.getElementById("num2").value);
+            document.getElementById("ans").innerHTML = Number1 + Number2 ;       
+        }
+    </script>
+</body>
+</html>

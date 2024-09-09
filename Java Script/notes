@@ -1,0 +1,46 @@
+What is JavaScript
+Js is a Dynamic computer programming language. It is lightweight and most commonly used as a part os web pages, ehose implementations allow client-side script to intract with the user and make dynamic page, it is an interprated programming language with object oriented capabalities.
+client side Js
+client side js is the most common from the language the script should be include in or refrenced by an html document for the code to be interpreted by the browser.
+it means that a web page need not be static HTML
+Advantages of JS
+less server intraction = you can validate user input before sending the page off to the server, this saves server trffic, which means less load on your server.
+
+immedicate feedback to the visitors
+
+increased interactivty
+Richer interfaces
+
+Javascript Syntax
+<script>……</script>
+
+<!DOCTYPEhtml>
+<html>
+<body>
+<script>
+document.write(“suraj Arya”);
+</script>
+</body>
+</html>
+
+
+The JavaScript Tag
+JS programs can be instered almost anywhere into html document using <script tag>
+example  (js1.html)
+
+====================================
+HTML DOMgetElementById()Method
+the getElementById() method returns the elements that have given id which is passed to the function. This function is a widely used HTMlDOM method in web designing to change the value of any particular elements or get a particular elements if the passed id to the functions does not exist then it returns results or null.
+
+
+
+
+
+============================
+javaScript Display Possibilities
+java can display data in diferent WebAssembly
+ 
+1. writing into an HTML element using innerHTML
+2. Writting into an HTML output using document.write()
+3. write into an alert box , using window.alert().
+write into the browsern console using console.log()
