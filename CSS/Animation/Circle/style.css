@@ -1,0 +1,24 @@
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+        background-color: red;
+    }
+    50%{
+        transform: translateX(250px);
+        background: green;
+    }
+    100%{
+        transform: translateX(500px);
+        background-color: blue;
+    }
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
