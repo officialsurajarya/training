@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            transition-timing-function:linear;
+            transition-property: transform,box-shadow;
+            transition-duration: 1.5s;
+            transition-delay: 0.1s;
+            background:radial-gradient( red,orange,yellow, green,blue,indigo, purple) ;
+            position:absolute;
+            top: 300px;
+            left: 600px;
+
+        }
+        div:hover{
+            transform: scale(2);
+            box-shadow: 5px 5px 5px gray;
+            
+        }
+    </style>
+</head>
+<body>
+        <div></div>
+
+</body>
+</html>
